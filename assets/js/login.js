@@ -27,10 +27,9 @@ $(function () {
     }
   )
   //监听注册表单事件
-  let baseURL = 'http://api-breakingnews-web.itheima.net';
   $('#form_reg').on('submit', function (e) {
     e.preventDefault();
-    $.post(`${baseURL}/api/reguser`,
+    $.post('/api/reguser',
       {
         username: $('#form_reg [name=username').val(),
         password:$('#form_reg [name=password').val()
@@ -47,7 +46,7 @@ $(function () {
     //阻止默认提交行为
     e.preventDefault();
     $.ajax({
-      url: `${baseURL}/api/login`,
+      url: '/api/login',
       method: 'POST',
       data: $(this).serialize(),
       success: function (res) {
@@ -57,8 +56,8 @@ $(function () {
         }
         //存储token localStorage
         localStorage.setItem('token', res.token);
-        //跳转到后台主页
-        location.href = '/index.html'
+        //跳转到后台主页 需要完整url
+        location.href = 'http://127.0.0.1:5500/04bigevent/index.html'
       }
     }
     )
