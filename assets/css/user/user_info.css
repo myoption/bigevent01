@@ -1,0 +1,14 @@
+body {
+  background-color: #dadada;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.layui-card-header {
+  font-size: 16px;
+}
+
+.layui-input {
+  width: 500px;
+}
+/*# sourceMappingURL=user_info.css.map */

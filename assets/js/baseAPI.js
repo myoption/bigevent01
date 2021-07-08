@@ -15,7 +15,7 @@ $.ajaxPrefilter(
     options.url = 'http://api-breakingnews-web.itheima.net' + options.url;
    //全局挂载拦截函数 有问题 会先出现访问的页面再跳转到登录页
     options.complete = function (res) {
-      console.log(res);
+      // console.log(res);
       if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
         //清空token 并跳转到登录页
         localStorage.removeItem('token');

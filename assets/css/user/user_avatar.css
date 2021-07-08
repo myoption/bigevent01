@@ -1,0 +1,58 @@
+body {
+  background-color: #dadada;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.layui-card-header {
+  font-size: 16px;
+}
+
+.layui-input {
+  width: 500px;
+}
+
+.fl {
+  float: left;
+}
+
+.row1 {
+  overflow: hidden;
+}
+
+.row1 #image {
+  width: 350px;
+}
+
+.row1 .preview-box {
+  margin-left: 40px;
+  text-align: center;
+}
+
+.row1 .w100 {
+  width: 100px;
+  height: 100px;
+}
+
+.row1 .w50 {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+.row1 .img-preview {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.cropper-box {
+  width: 350px;
+  overflow: hidden;
+  background-color: cyan;
+}
+
+.row2 {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=user_avatar.css.map */
