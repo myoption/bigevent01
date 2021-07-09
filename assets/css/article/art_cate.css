@@ -1,0 +1,14 @@
+
+body{
+  margin: 0;
+  padding: 15px;
+  background-color: #DADADA;
+}
+#addcate {
+  float: right;
+  margin-top: 6px;
+}
+.layui-input {
+  width: 300px;
+  margin-top: 20px;
+}
